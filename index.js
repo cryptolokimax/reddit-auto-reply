@@ -16,7 +16,7 @@ console.log(subreddit, submitterUserName);
 // Options object is a Snoowrap Listing object, but with subreddit and pollTime options
 const comments = new CommentStream(client, {
   subreddit,
-  limit: 10,
+  limit: 100,
   pollTime: 2000,
 });
 comments.on('item', (item) => {
@@ -34,7 +34,7 @@ comments.on('item', (item) => {
 
 const submissions = new SubmissionStream(client, {
   subreddit,
-  limit: 10,
+  limit: 100,
   pollTime: 2000,
 });
 submissions.on('item', (item) => {
