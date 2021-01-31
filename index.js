@@ -17,7 +17,7 @@ console.log(subreddit, submitterUserName);
 const comments = new CommentStream(client, {
   subreddit,
   limit: 100,
-  pollTime: 2000,
+  pollTime: 15000,
 });
 comments.on('item', (item) => {
   if (item.created_utc < startTime) console.log('==== OLD =====');
