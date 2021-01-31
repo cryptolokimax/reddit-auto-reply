@@ -1,0 +1,20 @@
+{
+  "name": "reddit-commenter",
+  "scripts": {
+    "start": "node -r esm index.js",
+    "dev": "node -r esm index.js"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "micro": "latest",
+    "snoostorm": "^1.5.2",
+    "snoowrap": "^1.22.0"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-node": "latest",
+    "micro-dev": "latest"
+  }
+}

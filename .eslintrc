@@ -1,0 +1,28 @@
+{
+  "extends": ["eslint:recommended", "plugin:node/recommended", "airbnb-base"],
+  "rules": {
+    "node/exports-style": ["error", "module.exports"],
+    "node/prefer-global/buffer": ["error", "always"],
+    "node/prefer-global/console": ["error", "always"],
+    "node/prefer-global/process": ["error", "always"],
+    "node/prefer-global/url-search-params": ["error", "always"],
+    "node/prefer-global/url": ["error", "always"],
+    "node/no-unsupported-features": "off",
+    "node/no-unsupported-features/es-syntax": "off",
+    "no-console": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "modules": true,
+      "spread": true,
+      "restParams": true
+    }
+  }
+}
