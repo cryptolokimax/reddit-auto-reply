@@ -5,7 +5,7 @@ const creds = require('./credentials.json');
 
 const client = new Snoowrap(creds);
 
-const startTime = new Date().getTime() / 10000;
+const startTime = new Date().getTime() / 1000;
 
 console.log('startTime', startTime);
 
